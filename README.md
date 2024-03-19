@@ -8,7 +8,7 @@ ShotMAP (Shotgun Metagenomic Analysis Pipeline) is a user-friendly, automated bi
 
 **Assembly:** Assembles cleaned reads into contigs using megahit.
 
-**Metagenome-Assembled Genome (MAG) Assembly:** Identifies and assembles potential individual organism genomes (MAGs) from the assembled contigs using metabat2.
+**Metagenome-Assembled Genome (MAG) Assembly:** Identifies and assembles potential Metagenome-assembled genomes (MAGs) from the assembled contigs using metabat2.
 
 **MAG Quality Analysis:** Assesses the quality and completeness of assembled MAGs using checkm.
 
@@ -18,52 +18,79 @@ ShotMAP (Shotgun Metagenomic Analysis Pipeline) is a user-friendly, automated bi
 
 **Carbohydrate-Active Enzyme Identification:** Identifies enzymes involved in carbohydrate metabolism using dbcan.
 
-**Metabolic Pathway Identification:** Predicts metabolic pathways based on the identified proteins using microbe_annotator.
+**Metabolic Pathway Identification:** Predicts metabolic pathways based on the identified proteins using microbeannotator.
 
 ## Dependencies
-ShotMAP relies on several software tools and requires them to be installed and configured within a conda environment. These tools include:
+ShotMAP relies on several software tools and requires them to be installed. These tools include:
 
-fastp
-megahit
-metabat2
-checkm
-prodigal
-abricate
-dbcan
-microbeannotator
+* [fastp](https://github.com/OpenGene/fastp)
+
+* [megahit](https://github.com/voutcn/megahit)
+
+* [metabat2](https://github.com/linsalrob/ComputationalGenomicsManual/blob/master/CrossAssembly/Metabat.md)
+ 
+* [checkm](https://github.com/Ecogenomics/CheckM)
+
+* [prodigal](https://github.com/hyattpd/Prodigal)
+
+* [abricate](https://github.com/tseemann/abricate)
+
+* [dbcan](https://github.com/linnabrown/run_dbcan)
+
+* [microbeannotator](https://github.com/cruizperez/MicrobeAnnotator)
+
+## Installation
+
+### Clone the repository
+``` git clone https://github.com/ishtiaque-ahammad/ShotMAP ```
+
+### Navigate to the cloned directory
+``` cd ShotMAP ```
+
+### Make the script executable
+``` chmod +x ShotMAP.sh ```
+
+### Install dependencies
+``` conda env create --file fastp.yml ```
+
+``` conda env create --file megahit.yml ```
+
+``` conda env create --file metabat2.yml ```
+
+``` conda env create --file checkm.yml ```
+
+``` conda env create --file prodigal.yml ```
+
+``` conda env create --file abricate.yml ```
+
+``` conda env create --file dbcan.yml ```
+
+``` conda env create --file microbeannotator.yml ```
 
 ## Usage
-To use ShotMAP, follow these steps:
 
-### Clone the repository:
+### Prepare your data
 
-git clone https://github.com/yourusername/ShotMAP.git
+* Ensure you have your forward and reverse read files in FASTQ format with their extensions (e.g., R1.fastq.gz, R2.fastq.gz).
 
-### Navigate to the cloned directory:
-cd ShotMAP
+* Decide on a sample ID for reference.
 
-### Make the script executable:
-chmod +x ShotMAP.sh
+* Determine the number of CPU cores available on your system.
 
-### Prepare your data:
-Ensure you have your forward and reverse read files in FASTQ format with their extensions (e.g., R1.fastq.gz, R2.fastq.gz).
-Decide on a sample ID for reference.
-Determine the number of CPU cores available on your system.
-
-### Run the script:
-bash ShotMAP.sh
+### Run the script
+```  bash ShotMAP.sh ``` 
 
 The script will prompt you for the following information:
 
-Forward read file name
-Reverse read file name
-Sample ID
-Number of CPU cores
+* Forward read file name
+* Reverse read file name
+* Sample ID
+* Number of CPU cores
 
-### Output:
+### Output
 The script will create separate directories for each analysis step and store the corresponding output files.
 
-### Runtime:
+### Runtime
 The script will display the total runtime upon successful completion.
 
 ## License
