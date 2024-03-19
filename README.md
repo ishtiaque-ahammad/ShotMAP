@@ -2,6 +2,9 @@
 
 ## Description
 ShotMAP (Shotgun Metagenomic Analysis Pipeline) is a user-friendly, automated bioinformatics pipeline designed to analyze shotgun metagenomic data. It integrates various tools to streamline the analysis workflow, offering insights into the microbial community composition and functional potential within an environmental sample.
+<p align="center">
+<img src="https://github.com/ishtiaque-ahammad/ShotMAP/assets/99262870/c36acb52-0fac-46e1-aa19-c63f566017b4" alt="ShotMAP" />
+</p>
 
 ## Features
 **Quality Control:** Performs quality filtering of raw reads using fastp.
