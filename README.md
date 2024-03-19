@@ -71,21 +71,10 @@ ShotMAP relies on several software tools and requires them to be installed. Thes
 
 ### Prepare your data
 
-* Ensure you have your forward and reverse read files in FASTQ format with their extensions (e.g., R1.fastq.gz, R2.fastq.gz).
-
-* Decide on a sample ID for reference.
-
-* Determine the number of CPU cores available on your system.
+Ensure you have your forward and reverse read files in fastq / fastq.gz format with their extensions (e.g., R1.fastq.gz, R2.fastq.gz).
 
 ### Run the script
 ```  bash ShotMAP.sh ``` 
-
-The script will prompt you for the following information:
-
-* Forward read file name
-* Reverse read file name
-* Sample ID
-* Number of CPU cores
 
 ### Output
 The script will create separate directories for each analysis step and store the corresponding output files.
