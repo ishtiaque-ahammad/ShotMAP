@@ -7,21 +7,21 @@ ShotMAP (Shotgun Metagenomic Analysis Pipeline) is a user-friendly, automated bi
 </p>
 
 ## Features
-**Quality Control:** Performs quality filtering of raw reads using fastp.
+**Quality Control:** Performs quality filtering of raw reads using Fastp.
 
-**Assembly:** Assembles cleaned reads into contigs using megahit.
+**Assembly:** Assembles cleaned reads into contigs using MEGAHIT.
 
-**Metagenome-Assembled Genome (MAG) Assembly:** Identifies and assembles potential Metagenome-assembled genomes (MAGs) from the assembled contigs using metabat2.
+**Metagenome-Assembled Genome (MAG) Assembly:** Identifies and assembles potential Metagenome-assembled genomes (MAGs) from the assembled contigs using MetaBat2.
 
-**MAG Quality Analysis:** Assesses the quality and completeness of assembled MAGs using checkm.
+**MAG Quality Analysis:** Assesses the quality and completeness of assembled MAGs using CheckM.
 
-**Protein-coding Gene Prediction:** Identifies protein-coding genes within the assembled contigs using prodigal.
+**Protein-coding Gene Prediction:** Identifies protein-coding genes within the assembled contigs using Prodigal.
 
-**Antibiotic Resistance Gene Identification:** Screens for genes associated with antibiotic resistance within the contigs using abricate.
+**Antibiotic Resistance Gene Identification:** Screens for genes associated with antibiotic resistance within the contigs using ABRicate.
 
-**Carbohydrate-Active Enzyme Identification:** Identifies enzymes involved in carbohydrate metabolism using dbcan.
+**Carbohydrate-Active Enzyme Identification:** Identifies enzymes involved in carbohydrate metabolism using dbCAN3.
 
-**Metabolic Pathway Identification:** Predicts metabolic pathways based on the identified proteins using microbeannotator.
+**Metabolic Pathway Identification:** Predicts metabolic pathways based on the identified proteins using MicrobeAnnotator.
 
 ## Dependencies
 ShotMAP relies on several software tools and requires them to be installed. These tools include:
@@ -81,9 +81,6 @@ Ensure you have your forward and reverse read files in fastq / fastq.gz format w
 
 ### Output
 The script will create separate directories for each analysis step and store the corresponding output files.
-
-### Runtime
-The script will display the total runtime upon successful completion.
 
 ## License
 This project is licensed under the GPL-3.0 license.
