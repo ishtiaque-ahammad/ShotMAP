@@ -26,21 +26,21 @@ ShotMAP (Shotgun Metagenomic Analysis Pipeline) is a user-friendly, automated bi
 ## Dependencies
 ShotMAP relies on several software tools and requires them to be installed. These tools include:
 
-* [fastp](https://github.com/OpenGene/fastp)
+* [Fastp](https://github.com/OpenGene/fastp)
 
-* [megahit](https://github.com/voutcn/megahit)
+* [MEGAHIT](https://github.com/voutcn/megahit)
 
-* [metabat2](https://github.com/linsalrob/ComputationalGenomicsManual/blob/master/CrossAssembly/Metabat.md)
+* [MetaBat2](https://github.com/linsalrob/ComputationalGenomicsManual/blob/master/CrossAssembly/Metabat.md)
  
-* [checkm](https://github.com/Ecogenomics/CheckM)
+* [CheckM](https://github.com/Ecogenomics/CheckM)
 
-* [prodigal](https://github.com/hyattpd/Prodigal)
+* [Prodigal](https://github.com/hyattpd/Prodigal)
 
-* [abricate](https://github.com/tseemann/abricate)
+* [ABRicate](https://github.com/tseemann/abricate)
 
-* [dbcan](https://github.com/linnabrown/run_dbcan)
+* [dbCAN3](https://github.com/linnabrown/run_dbcan)
 
-* [microbeannotator](https://github.com/cruizperez/MicrobeAnnotator)
+* [MicrobeAnnotator](https://github.com/cruizperez/MicrobeAnnotator)
 
 ## Installation
 
